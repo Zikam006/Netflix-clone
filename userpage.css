@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+     background: #000;
+     color: #b3b3b3;
+     
+}
+header{
+    margin: 40px;
+    padding: 10px;
+    display: flex;
+    }
+ .netlogo{
+    width: 200px;
+}
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 25vh;
+}
+h2{
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 25px;
+}
+li{
+    list-style: none;
+}
+section ul{
+white-space: nowrap;
+}
+section li{
+    width: 30%;
+    display: inline-block;
+}
+section li .pro{
+    padding-left: 45px;
+}
+.cards img:hover{
+    border: 2px solid white;
+    transition: ease-in-out 0.7s;
+    color: #fff;
+}
+p{
+    color: white;
+}
+button{
+    border: 1px solid #fff;
+    outline: 0;
+    padding: 5px 20px;
+    background: transparent;
+    color: #fff;
+    border-radius: 3px;
+}
+.btn button{
+    margin-top: 20px;
+    margin-left: 100px;
+    align-items: center;
+}
+/* --------media queries--------- */
+@media (max-width:800px) {
+    .netlogo{
+        width: 200px;
+    }
+    section ul{
+        white-space: wrap;
+    }
+    section li{
+        display: block;
+    }
+    h2{
+        font-size: 16px;
+        max-width: 100%;
+    }
+}

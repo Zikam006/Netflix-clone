@@ -1,0 +1,152 @@
+ *{
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+   }
+   body{
+       background: #000;
+       }
+        body::before{
+        content: "";
+       color: #fff;
+       background: url(./netflix/header-image.png);
+       width: 100%;
+       opacity: 0.3;
+       height: 100%;
+       position: absolute ;
+       top: 0;
+       left: 0;
+       background-position:
+    center;
+    background-size: cover;
+   }
+   
+   .netlogo{
+     position: fixed;
+     z-index: 1;
+    width: 230px;
+    cursor: pointer;
+    padding: 25px 50px;
+}
+.form-container{
+ position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 4px;
+    padding: 65px;
+    width: 420px;
+    transform: translate(-50%, -50%);
+    background:rgba(0,0,0,0.74) ;
+}
+.form-container h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.form-container .form-input input{
+ border: 0;
+ outline: 0;
+ border-radius: 3px;
+ background-color: #333;
+ margin-bottom: 15px;
+ padding: 8px 5px;
+ height: 40px;
+ width: 100%;
+ color: #fff;
+ font-size: 15px;
+}
+.form-container button{
+    margin-top: 24px;
+    height: 40px;
+    width: 100%;
+    background-color: #db0001;
+    border: 0;
+    outline: 0;
+    border-radius: 3px;
+}
+.form-container button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.form-container button:hover{
+    background: red;
+}
+.remember input{
+ margin-right: 5px;   
+ accent-color: #b3b3b3;
+ cursor: pointer;
+}
+.help{
+    color: #9a9a9a;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 70px;
+}
+.help-container .help a,
+.font-awesome a{
+    color: #9a9a9a;
+    text-decoration: none;
+    cursor: pointer;
+}
+.help-container .help a:hover
+{
+    text-decoration: underline;
+}
+.fa-square-facebook{
+    font-size: 30px;
+    color: rgb(47, 47, 151);
+    background-color: #fff;
+} 
+.font-awesome{
+ display: flex;
+ gap: 20px;
+ font-size: 15px;
+ margin-bottom: 10px;
+}
+.font-awesome a:hover{
+   text-decoration: underline;
+} 
+.new{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.new a{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+.new-container{
+    color: #9a9a9a;
+}
+small a{
+    text-decoration: none;
+    color: blue;
+}
+/* -------------media queries----------- */
+
+
+@media (max-width:800px) {
+    body::before{
+        display: none;
+    }
+    .netlogo, .form-container{
+        padding: 20px;
+    }
+     .netlogo{
+        width: 180px;
+    }
+    .form-container{
+        top: 40%;
+        width: 100%;
+    }
+    .form-container .form-input{
+        margin: 25px 0 40px;
+    }
+}
